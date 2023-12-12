@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Diabetes System</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao AI Diabetes System</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar no diagnóstico de diabetes.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do paciente e clicar em "Diagnosticar".</p>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/home.jpeg">
+        </div> -->
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newPh" placeholder="Ph">
+        <input type="text" id="newHard" placeholder="Hardness">
+        <input type="text" id="newSolid" placeholder="Solids">
+        <input type="text" id="newChlor" placeholder="Chloramines">
+        <input type="text" id="newConduc" placeholder="Conductivity">
+        <input type="text" id="newSulf" placeholder="Sulfate">
+        <input type="text" id="newOrgan" placeholder="Organic Carbon">
+        <input type="text" id="newTrih" placeholder="Trihalomethanes">
+        <input type="text" id="newTurb" placeholder="Turbidity">
+        <span onclick="newItem()" class="addBtn">Diagnosticar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Ph</th>
+                <th>Hardness</th>
+                <th>Solids</th>
+                <th>Chloramines</th>
+                <th>Sulfate</th>
+                <th>Conductivity</th>
+                <th>Organic Carbon</th>
+                <th>Trihalomethanes</th>
+                <th>Turbidity</th>
+                <th>Potability</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
